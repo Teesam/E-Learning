@@ -1,0 +1,22 @@
+{
+  "name": "E-Learning Website",
+  "version": "1.0.0",
+  "description": "A learning website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Teesam/E-Learning.git"
+  },
+  "author": "Olayiwola Samuel Tunde",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Teesam/E-Learning/issues"
+  },
+  "homepage": "https://github.com/Teesam/E-Learning#readme",
+  "devDependencies": {
+    "webpack": "^5.24.3"
+  }
+}
