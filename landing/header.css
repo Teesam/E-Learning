@@ -2,17 +2,224 @@
     
 }
 
-#slider{
-    width: 55%;
-    height: auto;
-    animation-name: sliderAnimation;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
+#header-half{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-@keyframes sliderAnimation{
-    0%{transform: translateX(100%)};
-    10%{transform: translateX(0%)}
-    90%{transform: translateX(0%)}
-    100%{transform: translateX(-100%)}
+.slider{
+    min-width: 100%;
+    height: 100%;
+    transition: 2s;
+}
+
+#slider-holder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#slider-div{
+    display: flex;
+    background-color: rgb(41, 56, 83);
+    width: 45vw;
+    height: 60vh;
+    overflow-x: hidden;
+    border-radius: 5px;
+    margin: 0 0 1rem 0;
+    position: relative;
+}
+
+#radio-div{
+    visibility: hidden;
+    position: absolute;
+    top: 1;
+    left: 1;
+}
+
+.slider-radio:not(:last-child){
+    margin-right: 1rem;
+}
+
+#radio-label{
+    position: absolute;
+    bottom: 3rem;
+    margin: 0 auto;
+    right: 40%;
+}
+
+.radio{
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid rgb(0, 195, 255);
+    cursor: pointer;
+    display: none;
+}
+
+.radio:not(:last-child){
+    margin-right: 3rem;
+}
+
+#slider-tag{
+    background-color: rgb(31, 18, 18);
+    width: 100%;
+    border-radius: 5px;
+    color: white;
+    padding: 1rem 0;
+
+}
+
+#slider-tag > p{
+    text-align: center;
+}
+
+#header-course-holder{
+    width: 50vw;
+    max-height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-course-card{
+    width: 16rem;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+    overflow-x: hidden;
+    border: .7px solid rgb(196, 195, 195);
+    padding: .5rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.header-course-card:hover{
+    background-color: rgb(14, 13, 13);
+    color: white;
+}
+
+.header-course-card:not(:nth-child(1)){
+    margin-left: 3rem;
+}
+
+.header-course-card:not(:nth-child(3)){
+    margin-left: 3rem;
+}
+
+.header-course-card > div{
+    width: 10rem;
+    font-size: .8rem;
+}
+
+.header-course-card > div > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.header-course-card > div > h5{
+    margin: 1rem 0;
+    color: rgb(78, 78, 248);
+}
+
+.course-image{
+    width: 20rem;
+    height: auto;
+    background-image: url('../assets/python.jpg');
+    background-position: center;
+    margin-right: 1rem;
+}
+
+.course-buy{
+    background-image: linear-gradient(180deg, rgb(62, 62, 146), black);
+    border: none;
+    padding: .3rem;
+    border-radius: 5px;
+    color: white;
+    font-size: .7rem;
+    cursor: pointer;
+}
+
+#python{
+    width: 10rem;
+    height: 13rem;
+    background-image: url('../assets/python.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#java{
+    width: 10rem;
+    height: 13rem;
+    background-image: url('../assets/java.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#javascript{
+    width: 10rem;
+    height: 13rem;
+    background-image: url('../assets/javascript.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#go{
+    width: 10rem;
+    height: 13rem;
+    background-image: url('../assets/Golang.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#lower-header-course-holder{
+    display: flex;
+    width: 95vw;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    margin-top: 3rem;
+    box-shadow: 0px 5px 7px 0px grey;
+    border-radius: 5px;
+    padding: 3rem 0;
+}
+
+.course-card{
+    width: 15rem;
+    display: flex;
+    margin-left: 1rem;
+    border: .7px solid rgb(196, 195, 195);
+    padding: .5rem;
+    border-radius: 10px;
+}
+
+.course-card > div{
+    width: 10rem;
+    font-size: .8rem;
+}
+
+
+.course-card > div > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.course-card > div > h5{
+    margin: 1rem 0;
+    color: rgb(78, 78, 248);
 }

@@ -9,8 +9,10 @@
     <!-- <meta http-equiv="refresh" content="10" > -->
     <link rel="stylesheet" type="text/css" href="nav.css" />
     <link rel="stylesheet" type="text/css" href="header.css" />
+    <link rel="stylesheet" type="text/css" href="brand.css" />
+    <link rel="stylesheet" type="text/css" href="recommendation.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>E Learning</title>
 </head>
 <body>
@@ -51,8 +53,26 @@
         <div id = 'sub-nav'>
             <ul>
                 <li>
-                    <img src="../assets/tag.png" alt="an icon" class="sub-nav-icon" />
-                    <a href="#" class="sub-nav-item">Web Development</a>
+                    <!-- <div> -->
+                        <img src="../assets/tag.png" alt="an icon" class="sub-nav-icon" />
+                        <a href="#" class="sub-nav-item">Web Development</a>
+                    <!-- </div> -->
+                    <!-- <div>
+                        <ul class = "drop-down">
+                            <li>
+                                <a href="">Data Analytics</a>
+                            </li>
+                            <li>
+                                <a href="">Data Analytics</a>
+                            </li>
+                            <li>
+                                <a href="">Data Analytics</a>
+                            </li>
+                            <li>
+                                <a href="">Data Analytics</a>
+                            </li>
+                        </ul>
+                    </div> -->
                 </li>
                 <li>
                     <img src="../assets/cloud.png" alt="an icon" class="sub-nav-icon" />
@@ -88,13 +108,287 @@
 
     <section>
         <header>
-            <div>
-                <img name = 'slider' alt="an image slider" id = 'slider' />
-            </div>
-            <div>
+            <div id = 'slider-holder'>
+                    <div id = 'radio-label'>
+                        <label for="radio-1" id="radio1" class="radio"></label>
+                        <label for="radio-2" id="radio2" class="radio"></label>
+                        <label for="radio-3" id="radio3" class="radio"></label>
+                        <label for="radio-4" id="radio4" class="radio"></label>
+                    </div>
+                    <div id = 'radio-div'>
+                        <input type="radio" name="slider-radio" class ="slider-radio" id = 'radio-1' />
+                        <input type="radio" name="slider-radio" class ="slider-radio" id = 'radio-2' />
+                        <input type="radio" name="slider-radio" class ="slider-radio" id = 'radio-3' />
+                        <input type="radio" name="slider-radio" class ="slider-radio" id = 'radio-4' />
+                    </div>
+                    <div id = 'header-half'>
+                        <div id = 'slider-div'>
+                            
+                            <img src="../assets/laptop-book.jpg" name = 'slider' alt="an image slider" class = 'slider' id = 'first-slider' />
+                            
+                            <img src="../assets/floating.jpeg" name = 'slider' alt="an image slider" class = 'slider' id = 'second-slider' />
+                            
+                            <img src="../assets/web-option.jpg" name = 'slider' alt="an image slider" class = 'slider' id = 'third-slider' />
+                            
+                            <img src="../assets/reading.jpg" name = 'slider' alt="an image slider" class = 'slider' id = 'fourth-slider' />
+                            
+                        </div>
+                        <div id = 'slider-tag'>
+                            <p>This works nicely.</p>
+                        </div>
+                    </div>
+                    <div id = 'header-course-holder'>
+                        <div class="header-course-card">
+                            <div class = 'course-image' id = 'python'></div>
+                            <div>
+                                <h4>PYTHON</h4>
+                                <h5>This is just a dummy text</h5>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat amet itaque omnis facere, optio </p>
+                                <div>
+                                    <p>$10</p>
+                                    <button class="course-buy">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-course-card">
+                            <div class = 'course-image' id = 'java'></div>
+                            <div>
+                                <h4>JAVA</h4>
+                                <h5>This is just a dummy text</h5>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat amet itaque omnis facere, optio </p>
+                                <div>
+                                    <p>$10</p>
+                                    <button class="course-buy">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-course-card">
+                            <div class = 'course-image' id = 'go'></div>
+                            <div>
+                                <h4>GOLANG</h4>
+                                <h5>This is just a dummy text</h5>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat amet itaque omnis facere, optio </p>
+                                <div>
+                                    <p>$10</p>
+                                    <button class="course-buy">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-course-card">
+                            <div class = 'course-image' id = 'javascript'></div>
+                            <div>
+                                <h4>JAVASCRIPT</h4>
+                                <h5>This is just a dummy text</h5>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat amet itaque omnis facere, optio </p>
+                                <div>
+                                    <p>$10</p>
+                                    <button class="course-buy">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
 
+                </div>
             </div>
         </header>
+    </section>
+
+
+    <section>
+        <div id = 'lower-header-course-holder'>
+            <div class="course-card">
+                <div class = 'course-image'></div>
+                <div>
+                    <h4>PYTHON</h4>
+                    <h5>This is just a dummy text</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat amet itaque omnis facere, optio </p>
+                    <div>
+                        <p>$10</p>
+                        <button class="course-buy">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="course-card">
+                <div class = 'course-image'></div>
+                <div>
+                    <h4>PYTHON</h4>
+                    <h5>This is just a dummy text</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat amet itaque omnis facere, optio </p>
+                    <div>
+                        <p>$10</p>
+                        <button class="course-buy">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="course-card">
+                <div class = 'course-image'></div>
+                <div>
+                    <h4>PYTHON</h4>
+                    <h5>This is just a dummy text</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat amet itaque omnis facere, optio </p>
+                    <div>
+                        <p>$10</p>
+                        <button class="course-buy">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="course-card">
+                <div class = 'course-image'></div>
+                <div>
+                    <h4>PYTHON</h4>
+                    <h5>This is just a dummy text</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat amet itaque omnis facere, optio </p>
+                    <div>
+                        <p>$10</p>
+                        <button class="course-buy">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div id = 'brand-div'>
+            <h4>WE WORK WITH INDUSTRY PARTNERS LIKE</h4>
+            <div id = 'brander'>
+                <div id = 'brand-1'>
+                    <img src="../assets/Dangote.png" alt="" class="brand" />
+
+                    <img src="../assets/Dangote.png" alt="" class="brand" />
+
+                    <img src="../assets/Dangote.png" alt="" class="brand" />
+                </div>
+                <div id = 'brand-2'>
+                    <img src="../assets/mtn.png" alt="" class="brand" />
+
+                    <img src="../assets/mtn.png" alt="" class="brand" />
+
+                    <img src="../assets/mtn.png" alt="" class="brand" />
+                </div>
+                <div id = 'brand-3'>
+                    <img src="../assets/paystack.png" alt="" class="brand" />
+
+                    <img src="../assets/paystack.png" alt="" class="brand" />
+
+                    <img src="../assets/paystack.png" alt="" class="brand" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id = 'reco-sec'>
+        <div id = 'recommendations'>
+            <h4>Recommendations</h4>
+            <div id = 'recommended'>
+                <div class="recommendation-course-card">
+                    <div class = 'course-image'></div>
+                    <div>
+                        <h4>PYTHON</h4>
+                        <h5>This is just a dummy text</h5>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat amet itaque omnis facere, optio </p>
+                        <div>
+                            <p>$10</p>
+                            <button class="course-buy">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="recommendation-course-card">
+                    <div class = 'course-image'></div>
+                    <div>
+                        <h4>PYTHON</h4>
+                        <h5>This is just a dummy text</h5>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat amet itaque omnis facere, optio </p>
+                        <div>
+                            <p>$10</p>
+                            <button class="course-buy">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="recommendation-course-card">
+                    <div class = 'course-image'></div>
+                    <div>
+                        <h4>PYTHON</h4>
+                        <h5>This is just a dummy text</h5>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat amet itaque omnis facere, optio </p>
+                        <div>
+                            <p>$10</p>
+                            <button class="course-buy">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="recommendation-course-card">
+                    <div class = 'course-image'></div>
+                    <div>
+                        <h4>PYTHON</h4>
+                        <h5>This is just a dummy text</h5>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat amet itaque omnis facere, optio </p>
+                        <div>
+                            <p>$10</p>
+                            <button class="course-buy">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id = 'reco-sec'>
+        <div id = 'recommendations'>
+            <h4>Featured Courses</h4>
+            <div id = 'recommended'>
+                <div class="recommendation-course-card">
+                    <div class = 'course-image'></div>
+                    <div>
+                        <h4>PYTHON</h4>
+                        <h5>This is just a dummy text</h5>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat amet itaque omnis facere, optio </p>
+                        <div>
+                            <p>$10</p>
+                            <button class="course-buy">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="recommendation-course-card">
+                    <div class = 'course-image'></div>
+                    <div>
+                        <h4>PYTHON</h4>
+                        <h5>This is just a dummy text</h5>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat amet itaque omnis facere, optio </p>
+                        <div>
+                            <p>$10</p>
+                            <button class="course-buy">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="recommendation-course-card">
+                    <div class = 'course-image'></div>
+                    <div>
+                        <h4>PYTHON</h4>
+                        <h5>This is just a dummy text</h5>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat amet itaque omnis facere, optio </p>
+                        <div>
+                            <p>$10</p>
+                            <button class="course-buy">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="recommendation-course-card">
+                    <div class = 'course-image'></div>
+                    <div>
+                        <h4>PYTHON</h4>
+                        <h5>This is just a dummy text</h5>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat amet itaque omnis facere, optio </p>
+                        <div>
+                            <p>$10</p>
+                            <button class="course-buy">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
 

@@ -1,25 +1,28 @@
-let i = 0;
 
-const image = [];
+let slideIndex = 0;
+carousel();
 
-image[0] = '../assets/reading.jpg';
-image[1] = '../assets/laptop-book.jpg';
-image[2] = '../assets/floating.jpeg';
-image[3] = '../assets/web-option.jpg';
-
-console.log(image[0]);
-
-const sliderHandler = () => {
-    document.slider.src = image[i];
-
-    if( i < image.length - 1 ){
-        i++
-    }else{
-        i = 0;
-    }
-
-    setTimeout("sliderHandler()", 10000)
+function carousel() {
+  let i;
+  let x = document.getElementsByClassName("slider");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 5000); 
 }
 
-window.onload(sliderHandler());
+
+
+    setInterval(() => {
+        document.getElementById('brand-1').style.marginRight = '-100%';
+    }, 5000)
+
+
+
+
+
+
 
