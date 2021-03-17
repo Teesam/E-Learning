@@ -134,7 +134,6 @@ nav > ul > li > a:hover{
 #sub-nav > ul > li{
     list-style-type: none;
     display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
 }
