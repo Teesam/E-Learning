@@ -115,7 +115,7 @@ nav > ul > li > a:hover{
 /*--------Sub Nav------*/
 
 #sub-nav{
-    width: 99vw;
+    width: 98.7vw;
     height: 3rem;
     background-color: var(--grey);
     display: flex;

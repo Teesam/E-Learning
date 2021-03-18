@@ -1,0 +1,6 @@
+footer{
+    width: 100%;
+    min-height: 20vh;
+    background-image: linear-gradient(180deg, rgb(5, 5, 170), black);
+    margin-top: 5rem;
+}

@@ -11,6 +11,9 @@
     <link rel="stylesheet" type="text/css" href="./landing/header.css" />
     <link rel="stylesheet" type="text/css" href="./landing/brand.css" />
     <link rel="stylesheet" type="text/css" href="./landing/recommendation.css" />
+    <link rel="stylesheet" type="text/css" href="./landing/new.css" />
+    <link rel="stylesheet" type="text/css" href="./landing/popular.css" />
+    <link rel="stylesheet" type="text/css" href="./landing/footer.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>E Learning</title>
@@ -19,7 +22,7 @@
     <section>
         <nav>
             <div id = 'logo-div'>
-                <img src="../assets/e-logo.png" alt="The logo" id = 'logo' />
+                <img src="./assets/e-logo.png" alt="The logo" id = 'logo' />
                 <div id = 'search-div'>
                     <input type="text" id = 'nav-input'>
                     <button id = 'search-btn'>Search</button>
@@ -54,7 +57,7 @@
             <ul>
                 <li>
                     <!-- <div> -->
-                        <img src="../assets/tag.png" alt="an icon" class="sub-nav-icon" />
+                        <img src="./assets/tag.png" alt="an icon" class="sub-nav-icon" />
                         <a href="#" class="sub-nav-item">Web Development</a>
                     <!-- </div> -->
                     <!-- <div>
@@ -75,31 +78,31 @@
                     </div> -->
                 </li>
                 <li>
-                    <img src="../assets/cloud.png" alt="an icon" class="sub-nav-icon" />
+                    <img src="./assets/cloud.png" alt="an icon" class="sub-nav-icon" />
                     <a href="#" class="sub-nav-item">Cloud and Networking</a>
                 </li>
                 <li>
-                    <img src="../assets/suitcase.png" alt="an icon" class="sub-nav-icon" />
+                    <img src="./assets/suitcase.png" alt="an icon" class="sub-nav-icon" />
                     <a href="#" class="sub-nav-item">Business</a>
                 </li>
                 <li>
-                    <img src="../assets/database.png" alt="an icon" class="sub-nav-icon" />
+                    <img src="./assets/database.png" alt="an icon" class="sub-nav-icon" />
                     <a href="#" class="sub-nav-item">Database</a>
                 </li>
                 <li>
-                    <img src="../assets/accounting.png" alt="an icon" class="sub-nav-icon" />
+                    <img src="./assets/accounting.png" alt="an icon" class="sub-nav-icon" />
                     <a href="#" class="sub-nav-item">Accounting</a>
                 </li>
                 <li>
-                    <img src="../assets/sales.png" alt="an icon" class="sub-nav-icon" />
+                    <img src="./assets/sales.png" alt="an icon" class="sub-nav-icon" />
                     <a href="#" class="sub-nav-item">Sales and Marketing</a>
                 </li>
                 <li>
-                    <img src="../assets/code.png" alt="an icon" class="sub-nav-icon" />
+                    <img src="./assets/code.png" alt="an icon" class="sub-nav-icon" />
                     <a href="#" class="sub-nav-item">Programming</a>
                 </li>
                 <li>
-                    <img src="../assets/design.png" alt="an icon" class="sub-nav-icon" />
+                    <img src="./assets/design.png" alt="an icon" class="sub-nav-icon" />
                     <a href="#" class="sub-nav-item">Design</a>
                 </li>
             </ul>
@@ -109,32 +112,27 @@
     <section>
         <header>
             <div id = 'slider-holder'>
-                    <div id = 'radio-label'>
-                        <label for="radio-1" id="radio1" class="radio"></label>
-                        <label for="radio-2" id="radio2" class="radio"></label>
-                        <label for="radio-3" id="radio3" class="radio"></label>
-                        <label for="radio-4" id="radio4" class="radio"></label>
-                    </div>
-                    <div id = 'radio-div'>
-                        <input type="radio" name="slider-radio" class ="slider-radio" id = 'radio-1' />
-                        <input type="radio" name="slider-radio" class ="slider-radio" id = 'radio-2' />
-                        <input type="radio" name="slider-radio" class ="slider-radio" id = 'radio-3' />
-                        <input type="radio" name="slider-radio" class ="slider-radio" id = 'radio-4' />
-                    </div>
                     <div id = 'header-half'>
                         <div id = 'slider-div'>
+                            <div id = 'slider-div-div'>
                             
-                            <img src="../assets/laptop-book.jpg" name = 'slider' alt="an image slider" class = 'slider' id = 'first-slider' />
+                                <img src="./assets/laptop-book.jpg" name = 'slider' alt="an image slider" class = 'slider' id = 'first-slider' />
+                                
+                                <img src="./assets/floating.jpeg" name = 'slider' alt="an image slider" class = 'slider' id = 'second-slider' />
+                                
+                                <img src="./assets/web-option.jpg" name = 'slider' alt="an image slider" class = 'slider' id = 'third-slider' />
+                                
+                                <img src="./assets/reading.jpg" name = 'slider' alt="an image slider" class = 'slider' id = 'fourth-slider' />
                             
-                            <img src="../assets/floating.jpeg" name = 'slider' alt="an image slider" class = 'slider' id = 'second-slider' />
-                            
-                            <img src="../assets/web-option.jpg" name = 'slider' alt="an image slider" class = 'slider' id = 'third-slider' />
-                            
-                            <img src="../assets/reading.jpg" name = 'slider' alt="an image slider" class = 'slider' id = 'fourth-slider' />
-                            
+                            </div>
+                            <div id = 'slider-text'>
+                                <h2 style = 'width: 15rem; margin-bottom: 2rem;'>ELearning platform is your one stop shop for your educational resources!</h2>
+                                <p id = 'slider-text-p'>Join our best selling course and improve your career prospect</p>
+                            </div>
                         </div>
                         <div id = 'slider-tag'>
-                            <p>This works nicely.</p>
+                            <p>Join for free and meet out leading industry instructors</p>
+                            <p>Get industry recognised certification</p>
                         </div>
                     </div>
                     <div id = 'header-course-holder'>
@@ -199,9 +197,9 @@
     <section>
         <div id = 'lower-header-course-holder'>
             <div class="course-card">
-                <div class = 'course-image'></div>
+                <div class = 'course-image' id = 'it-security'></div>
                 <div>
-                    <h4>PYTHON</h4>
+                    <h4>IT & Security</h4>
                     <h5>This is just a dummy text</h5>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat amet itaque omnis facere, optio </p>
                     <div>
@@ -211,9 +209,9 @@
                 </div>
             </div>
             <div class="course-card">
-                <div class = 'course-image'></div>
+                <div class = 'course-image' id = 'art'></div>
                 <div>
-                    <h4>PYTHON</h4>
+                    <h4>Art</h4>
                     <h5>This is just a dummy text</h5>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat amet itaque omnis facere, optio </p>
                     <div>
@@ -223,9 +221,9 @@
                 </div>
             </div>
             <div class="course-card">
-                <div class = 'course-image'></div>
+                <div class = 'course-image' id = 'web-dev'></div>
                 <div>
-                    <h4>PYTHON</h4>
+                    <h4>Web Development</h4>
                     <h5>This is just a dummy text</h5>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat amet itaque omnis facere, optio </p>
                     <div>
@@ -235,9 +233,9 @@
                 </div>
             </div>
             <div class="course-card">
-                <div class = 'course-image'></div>
+                <div class = 'course-image' id = 'accounting'></div>
                 <div>
-                    <h4>PYTHON</h4>
+                    <h4>Accounting</h4>
                     <h5>This is just a dummy text</h5>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat amet itaque omnis facere, optio </p>
                     <div>
@@ -254,25 +252,25 @@
             <h4>WE WORK WITH INDUSTRY PARTNERS LIKE</h4>
             <div id = 'brander'>
                 <div id = 'brand-1'>
-                    <img src="../assets/Dangote.png" alt="" class="brand" />
+                    <img src="./assets/amazon.jpg" alt="" class="brand" />
 
-                    <img src="../assets/Dangote.png" alt="" class="brand" />
+                    <img src="./assets/tesla.jpg" alt="" class="brand" />
 
-                    <img src="../assets/Dangote.png" alt="" class="brand" />
+                    <img src="./assets/microsoft.png" alt="" class="brand" />
                 </div>
                 <div id = 'brand-2'>
-                    <img src="../assets/mtn.png" alt="" class="brand" />
+                    <img src="./assets/toyota.jpg" alt="" class="brand" />
 
-                    <img src="../assets/mtn.png" alt="" class="brand" />
+                    <img src="./assets/ford.jpg" alt="" class="brand" />
 
-                    <img src="../assets/mtn.png" alt="" class="brand" />
+                    <img src="./assets/mercedes.png" alt="" class="brand" />
                 </div>
                 <div id = 'brand-3'>
-                    <img src="../assets/paystack.png" alt="" class="brand" />
+                    <img src="./assets/ali.jpg" alt="" class="brand" />
 
-                    <img src="../assets/paystack.png" alt="" class="brand" />
+                    <img src="./assets/spotify.jpg" alt="" class="brand" />
 
-                    <img src="../assets/paystack.png" alt="" class="brand" />
+                    <img src="./assets/shopi.jpg" alt="" class="brand" />
                 </div>
             </div>
         </div>
@@ -284,9 +282,9 @@
             <h4>Recommendations</h4>
             <div id = 'recommended'>
                 <div class="recommendation-course-card">
-                    <div class = 'course-image'></div>
+                    <div class = 'course-image' id = 'music'></div>
                     <div>
-                        <h4>PYTHON</h4>
+                        <h4>Music</h4>
                         <h5>This is just a dummy text</h5>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat amet itaque omnis facere, optio </p>
                         <div>
@@ -296,9 +294,9 @@
                     </div>
                 </div>
                 <div class="recommendation-course-card">
-                    <div class = 'course-image'></div>
+                    <div class = 'course-image' id = 'business'></div>
                     <div>
-                        <h4>PYTHON</h4>
+                        <h4>Business</h4>
                         <h5>This is just a dummy text</h5>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat amet itaque omnis facere, optio </p>
                         <div>
@@ -308,9 +306,9 @@
                     </div>
                 </div>
                 <div class="recommendation-course-card">
-                    <div class = 'course-image'></div>
+                    <div class = 'course-image' id = 'graphic-design'></div>
                     <div>
-                        <h4>PYTHON</h4>
+                        <h4>Graphic Design</h4>
                         <h5>This is just a dummy text</h5>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat amet itaque omnis facere, optio </p>
                         <div>
@@ -320,9 +318,9 @@
                     </div>
                 </div>
                 <div class="recommendation-course-card">
-                    <div class = 'course-image'></div>
+                    <div class = 'course-image' id = 'digital-marketing'></div>
                     <div>
-                        <h4>PYTHON</h4>
+                        <h4>Digital Marketing</h4>
                         <h5>This is just a dummy text</h5>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat amet itaque omnis facere, optio </p>
                         <div>
@@ -340,9 +338,9 @@
             <h4>Featured Courses</h4>
             <div id = 'recommended'>
                 <div class="recommendation-course-card">
-                    <div class = 'course-image'></div>
+                    <div class = 'course-image' id = 'event'></div>
                     <div>
-                        <h4>PYTHON</h4>
+                        <h4>Event Management</h4>
                         <h5>This is just a dummy text</h5>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat amet itaque omnis facere, optio </p>
                         <div>
@@ -352,9 +350,9 @@
                     </div>
                 </div>
                 <div class="recommendation-course-card">
-                    <div class = 'course-image'></div>
+                    <div class = 'course-image' id = 'video-editing'></div>
                     <div>
-                        <h4>PYTHON</h4>
+                        <h4>Video Editing</h4>
                         <h5>This is just a dummy text</h5>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat amet itaque omnis facere, optio </p>
                         <div>
@@ -364,9 +362,9 @@
                     </div>
                 </div>
                 <div class="recommendation-course-card">
-                    <div class = 'course-image'></div>
+                    <div class = 'course-image' id = 'catering'></div>
                     <div>
-                        <h4>PYTHON</h4>
+                        <h4>Catering</h4>
                         <h5>This is just a dummy text</h5>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat amet itaque omnis facere, optio </p>
                         <div>
@@ -376,9 +374,9 @@
                     </div>
                 </div>
                 <div class="recommendation-course-card">
-                    <div class = 'course-image'></div>
+                    <div class = 'course-image' id = 'ui-ux'></div>
                     <div>
-                        <h4>PYTHON</h4>
+                        <h4>UI/UX</h4>
                         <h5>This is just a dummy text</h5>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat amet itaque omnis facere, optio </p>
                         <div>
@@ -390,6 +388,116 @@
             </div>
         </div>
     </section>
+
+
+    <section>
+        <div id = 'new-course-div'>
+            <h4>New Courses</h4>
+            <div id = 'new-course-holder'>
+                <div class="new-course">
+                    <div>
+                        <img src="./assets/computer.jpg" alt="" class = 'new-course-image'>
+                        <h5 class = 'new-course-title'>Javascript for absolute beginner</h5>
+                        <p class = 'new-course-author'>Ayoola Dogo</p>
+                        <div class="rating">
+                            <h5>4.5</h5>
+                        </div>
+                        <div class="new-course-bottom">
+                            <button class="new-course-btn">Check it out</button>
+                            <p class="new-course-price">$100</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="new-course">
+                    <div>
+                        <img src="./assets/guy.jpg" alt="" class = 'new-course-image'>
+                        <h5 class = 'new-course-title'>Javascript for absolute beginner</h5>
+                        <p class = 'new-course-author'>Ayoola Dogo</p>
+                        <div class="rating">
+                            <h5>4.5</h5>
+                        </div>
+                        <div class="new-course-bottom">
+                            <button class="new-course-btn">Check it out</button>
+                            <p class="new-course-price">$100</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="new-course">
+                    <div>
+                        <img src="./assets/lady.jpg" alt="" class = 'new-course-image'>
+                        <h5 class = 'new-course-title'>Javascript for absolute beginner</h5>
+                        <p class = 'new-course-author'>Ayoola Dogo</p>
+                        <div class="rating">
+                            <h5>4.5</h5>
+                        </div>
+                        <div class="new-course-bottom">
+                            <button class="new-course-btn">Check it out</button>
+                            <p class="new-course-price">$100</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div id = 'popular-course-div'>
+            <h4>Most Popular Courses</h4>
+            <div id = 'popular-course-holder'>
+                <div class="popular-course">
+                    <div>
+                        <img src="./assets/teach.jpg" alt="" class = 'popular-course-image'>
+                        <h5 class = 'popular-course-title'>Javascript for absolute beginner</h5>
+                        <p class = 'popular-course-author'>Ayoola Dogo</p>
+                        <div class="rating">
+                            <h5>4.5</h5>
+                        </div>
+                        <div class="popular-course-bottom">
+                            <button class="popular-course-btn">Check it out</button>
+                            <p class="popular-course-price">$100</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popular-course">
+                    <div>
+                        <img src="./assets/smile.jpg" alt="" class = 'popular-course-image'>
+                        <h5 class = 'popular-course-title'>Javascript for absolute beginner</h5>
+                        <p class = 'popular-course-author'>Ayoola Dogo</p>
+                        <div class="rating">
+                            <h5>4.5</h5>
+                        </div>
+                        <div class="popular-course-bottom">
+                            <button class="popular-course-btn">Check it out</button>
+                            <p class="popular-course-price">$100</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popular-course">
+                    <div>
+                        <img src="./assets/both.jpg" alt="" class = 'popular-course-image'>
+                        <h5 class = 'popular-course-title'>Javascript for absolute beginner</h5>
+                        <p class = 'popular-course-author'>Ayoola Dogo</p>
+                        <div class="rating">
+                            <h5>4.5</h5>
+                        </div>
+                        <div class="popular-course-bottom">
+                            <button class="popular-course-btn">Check it out</button>
+                            <p class="popular-course-price">$100</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <footer>
+
+        </footer>
+    </section>
+
 
 
     <script src="./landing/script.js"></script>

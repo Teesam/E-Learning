@@ -20,6 +20,10 @@ function carousel() {
         document.getElementById('brand-1').style.marginRight = '-100%';
     }, 5000)
 
+    setInterval(() => {
+      document.getElementById('brand-2').style.marginRight = '-100%';
+  }, 10000)
+
 
 
 

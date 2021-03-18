@@ -52,3 +52,43 @@
     margin: 1rem 0;
     color: rgb(78, 78, 248);
 }
+
+#music{
+    background-image: url('../assets/music.jpg');
+    background-position: center;
+}
+
+#graphic-design{
+    background-image: url('../assets/graphics.jpg');
+    background-position: center;
+}
+
+#business{
+    background-image: url('../assets/business.jpg');
+    background-position: center;
+}
+
+#digital-marketing{
+    background-image: url('../assets/digital.jpg');
+    background-position: center;
+}
+
+#video-editing{
+    background-image: url('../assets/video.jpg');
+    background-position: center;
+}
+
+#catering{
+    background-image: url('../assets/catering.jpg');
+    background-position: center;
+}
+
+#event{
+    background-image: url('../assets/event.jpg');
+    background-position: center;
+}
+
+#ui-ux{
+    background-image: url('../assets/ui.png');
+    background-position: center;
+}
