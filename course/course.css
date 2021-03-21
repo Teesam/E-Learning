@@ -1,0 +1,122 @@
+#course-setup{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 4rem;
+    font-size: .8rem;
+}
+
+#course-setup-1{
+    min-width: 27%;
+    max-width: 27%;
+}
+
+#course-setup-2{
+    min-width: 70%;
+    max-width: 70%;
+    border: 1px solid rgb(189, 188, 188);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+#course-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 1rem;
+    border: 1px solid rgb(189, 188, 188);
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+#rating-students{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#course-btn-div{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.course-btn{
+    background-color: rgb(129, 196, 129);
+    border-radius: 5px;
+    padding: .5rem 1rem;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.course-btn:hover{
+    background-color: rgb(71, 102, 71);
+}
+
+.course-btn:not(:last-child){
+    margin-right: .5rem;
+}
+
+#course-info{
+    display: flex;
+    padding: 1rem .5rem;
+    background-color: rgba(211, 226, 238, 0.979);
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+
+video{
+    width: 30%;
+    margin-right: 1rem;
+    background-color: white;
+    border-radius: 2px;
+}
+
+#rating-students{
+    margin: 1rem 0;
+}
+
+#rating{
+    color: rgb(241, 206, 6);
+}
+
+
+#course-info > div > p{
+    font-weight: bolder;
+    font-size: .8rem;
+}
+
+#course-info > div > p:not(:first-child){
+    margin-bottom: .5rem;
+}
+
+#course-buy{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#course-setup-1-image{
+    width: 100%;
+    border-radius: 5px;
+    margin: 1rem 0;
+}
+
+#course-content{
+    background-color: rgba(211, 226, 238, 0.979);
+    padding: 1rem 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+#course-search{
+    width: 100%;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 3px 7px 0px grey;
+}
