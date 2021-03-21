@@ -64,6 +64,12 @@
     border-radius: 5px;
     padding: .5rem;
     font-size: .5rem;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.popular-course-btn:hover{
+    background-color: rgb(71, 102, 71);
 }
 
 .popular-course-title{
