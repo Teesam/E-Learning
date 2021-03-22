@@ -119,6 +119,10 @@
         align-items: center;
         padding: 1rem 0;
     }
+
+    .popular-course:not(:first-child){
+        margin-top: 1rem;
+    }
     
     .popular-course > div{
         width: 80%;

@@ -330,7 +330,7 @@
     #slider-text{
         position: absolute;
         top: 2rem;
-        left: 2rem;
+        left: 1rem;
         color: white;
     }
     
@@ -409,7 +409,7 @@
     }
     
     .header-course-card{
-        width: 16rem;
+        width: 90%;
         height: 15rem;
         display: flex;
         justify-content: center;
@@ -522,7 +522,7 @@
     }
     
     .course-card{
-        width: 15rem;
+        width: 90%;
         display: flex;
         margin-left: 1rem;
         border: .7px solid rgb(196, 195, 195);

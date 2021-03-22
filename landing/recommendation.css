@@ -92,3 +92,106 @@
     background-image: url('../assets/ui.png');
     background-position: center;
 }
+
+
+@media only screen and (max-width: 490px){
+    #reco-sec{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #recommendations{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        /* margin: 0 auto; */
+        margin-top: 5rem;
+    }
+    
+    #recommendations > h4{
+        margin-bottom: 1rem;
+    }
+    
+    #recommended{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .recommendation-course-card{
+        width: 90%;
+        display: flex;
+        margin-left: unset;
+        border: .7px solid rgb(196, 195, 195);
+        padding: .5rem;
+        border-radius: 10px;
+    }
+
+    .recommendation-course-card:not(:first-child){
+        margin-top: 1rem;
+    }
+    
+    
+    .recommendation-course-card > div{
+        width: 10rem;
+        font-size: .8rem;
+    }
+    
+    
+    .recommendation-course-card > div > div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1rem;
+    }
+    
+    .recommendation-course-card > div > h5{
+        margin: 1rem 0;
+        color: rgb(78, 78, 248);
+    }
+    
+    #music{
+        background-image: url('../assets/music.jpg');
+        background-position: center;
+    }
+    
+    #graphic-design{
+        background-image: url('../assets/graphics.jpg');
+        background-position: center;
+    }
+    
+    #business{
+        background-image: url('../assets/business.jpg');
+        background-position: center;
+    }
+    
+    #digital-marketing{
+        background-image: url('../assets/digital.jpg');
+        background-position: center;
+    }
+    
+    #video-editing{
+        background-image: url('../assets/video.jpg');
+        background-position: center;
+    }
+    
+    #catering{
+        background-image: url('../assets/catering.jpg');
+        background-position: center;
+    }
+    
+    #event{
+        background-image: url('../assets/event.jpg');
+        background-position: center;
+    }
+    
+    #ui-ux{
+        background-image: url('../assets/ui.png');
+        background-position: center;
+    }
+}
