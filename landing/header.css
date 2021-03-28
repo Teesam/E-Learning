@@ -3,23 +3,34 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 80vh;
 }
 
 .slider{
     min-width: 100%;
     height: 100%;
-    transition: 2s;
     cursor: pointer;
+    animation-name: slide;
+    animation-duration: 2s;
 }
 
-.slider:hover{
-    opacity: .6;
+@keyframes slide{
+    0%{opacity: .5;}
+    100%{opacity: 1;}
+}
+
+.slider-image:hover{
+    opacity: .8;
 }
 
 #slider-holder{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    margin-top: 6rem;
+    width: 100vw;
+    height: 80vh;
+    overflow: hidden;
 }
 
 #slider-div{
@@ -29,34 +40,116 @@
 #slider-div-div{
     display: flex;
     background-color: white;
-    width: 45vw;
-    height: 60vh;
+    width: 75vw;
+    height: 80vh;
     overflow-x: hidden;
     border-radius: 5px;
-    margin: 0 0 1rem 0;
+}
+
+.slider-image{
+    width: 100%;
+    height: 100%;
+    transition: 2s;
 }
 
 #slider-text{
+    position: relative;
     position: absolute;
     top: 2rem;
     left: 2rem;
     color: white;
+    padding: 1rem;
 }
+
+/* #slider-text > span{
+    height: 1rem;
+    width: 2rem;
+    position: absolute;
+    display: inline-block;
+}
+
+#slider-text > span:nth-child(1){
+    top: 0;
+    left: -200%;
+    width: 100%;
+    height: 4px;
+    background-image: linear-gradient(90deg, transparent, rgb(218, 7, 7));
+    transition: .25s;
+}
+
+#slider-text:hover > span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-image: linear-gradient(90deg, transparent, rgb(218, 7, 7));
+
+}
+
+#slider-text > span:nth-child(2){
+    top: -200%;
+    right: 0;
+    width: 4px;
+    height: 100%;
+    background-image: linear-gradient(90deg, transparent, rgb(218, 7, 7));
+    transition: .5s;
+}
+
+#slider-text:hover > span:nth-child(2){
+    top: 0;
+    right: 0;
+    background-image: linear-gradient(180deg, transparent, rgb(218, 7, 7));
+
+}
+
+#slider-text > span:nth-child(3){
+    bottom: 0;
+    right: -200%;
+    width: 100%;
+    height: 4px;
+    background-image: linear-gradient(90deg, transparent, rgb(218, 7, 7));
+    transition: .25s;
+}
+
+#slider-text:hover > span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 4px;
+    background-image: linear-gradient(270deg, transparent, rgb(218, 7, 7));
+
+}
+
+#slider-text > span:nth-child(4){
+    bottom: -200%;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background-image: linear-gradient(90deg, transparent, rgb(218, 7, 7));
+    transition: .5s;
+}
+
+#slider-text:hover > span:nth-child(4){
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(360deg, transparent, rgb(218, 7, 7));
+
+} */
 
 #slider-text-p{
     font-weight: bolder;
-    color: rgb(190, 164, 12);
+    color: rgb(0, 2, 5);
     animation-name: sliderP;
-    animation-duration: 20s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
-}
+} 
 
 @keyframes sliderP{
-    0%{color: rgb(78, 51, 53);}
-    25%{color: rgb(197, 182, 43);}
-    50%{color: rgb(230, 98, 66);}
-    75%{color: rgb(247, 241, 245);}
+    0%{transform: translateY(50px);}
+    20%{transform: translateY(0px);}
+    100%{transform: translateY(0px);}
 }
+
 
 #radio-div{
     visibility: hidden;
@@ -98,6 +191,7 @@
     justify-content: space-between;
     align-items: center;
     font-size: .6rem;
+    margin-top: 1rem;
 }
 
 #slider-tag > p:not(:last-child){
@@ -109,45 +203,43 @@
 }
 
 #header-course-holder{
-    width: 50vw;
-    max-height: 80vh;
+    width: 100%;
+    min-height: 100%;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    padding: 0 1rem;
 }
 
 .header-course-card{
-    width: 16rem;
-    height: 15rem;
+    min-width: 90%;
+    height: 40%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-right: 2rem;
     overflow-x: hidden;
-    border: .7px solid rgb(196, 195, 195);
-    padding: .5rem;
+    border: .2px solid rgb(247, 241, 241);
     border-radius: 10px;
     margin-top: 1rem;
     cursor: pointer;
     transition: .4s;
+    padding: 0 0 .5rem 0;
+}
+
+.header-course-card:not(:first-child){
+    margin-top: 1rem;
 }
 
 .header-course-card:hover{
-    background-color: rgb(14, 13, 13);
+    background-color: rgb(139, 98, 98);
     color: white;
 }
 
-.header-course-card:not(:nth-child(1)){
-    margin-left: 3rem;
-}
-
-.header-course-card:not(:nth-child(3)){
-    margin-left: 3rem;
-}
-
 .header-course-card > div{
-    width: 10rem;
+    width: 90%;
     font-size: .8rem;
 }
 
@@ -155,20 +247,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 1rem;
+    margin-top: .5rem;
 }
 
 .header-course-card > div > h5{
-    margin: 1rem 0;
+    margin: .5rem 0;
     color: rgb(78, 78, 248);
-}
-
-.course-image{
-    width: 10rem;
-    height: auto;
-    background-image: url('../assets/python.jpg');
-    background-position: center;
-    margin-right: 1rem;
 }
 
 .course-buy{
@@ -182,8 +266,8 @@
 }
 
 #python{
-    width: 10rem;
-    height: 13rem;
+    width: 100%;
+    height: 100px;
     background-image: url('../assets/python.jpg');
     background-position: center;
     background-size: cover;
@@ -191,27 +275,9 @@
 }
 
 #java{
-    width: 10rem;
-    height: 13rem;
+    width: 100%;
+    height: 100px;
     background-image: url('../assets/java.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#javascript{
-    width: 10rem;
-    height: 13rem;
-    background-image: url('../assets/javascript.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#go{
-    width: 10rem;
-    height: 13rem;
-    background-image: url('../assets/Golang.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -231,7 +297,8 @@
 }
 
 .course-card{
-    width: 15rem;
+    width: 300px;
+    height: 250px;
     display: flex;
     margin-left: 1rem;
     border: .7px solid rgb(196, 195, 195);
@@ -276,6 +343,29 @@
     background-image: url('../assets/accounting-1.png');
     background-position: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -528,6 +618,10 @@
         border: .7px solid rgb(196, 195, 195);
         padding: .5rem;
         border-radius: 10px;
+    }
+
+    .course-card:not(:first-child){
+        margin-top: 1rem;
     }
     
     .course-card > div{
