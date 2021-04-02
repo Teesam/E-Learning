@@ -48,6 +48,8 @@ nav{
 #logo{
     width: 7rem;
     margin-left: 3rem;
+    color: #0d47a1;
+    font-style: italic;
 }
 
 #logo-div{
@@ -60,7 +62,7 @@ nav{
 }
 
 #search-btn{
-    color: var(--blue);
+    color: #0d47a1;;
     font-size: .8rem;
     font-weight: bold;
     background-color: transparent;
@@ -176,7 +178,7 @@ nav > ul > li > a:hover{
     content: '';
     background-color: white;
     width: 78%;
-    height: .1rem;
+    height: 1px;
     transition: .3s;
 }
 
@@ -224,6 +226,12 @@ sub-nav > ul > li:hover .sub-nav-item{
     height: .4em;
     margin: .3rem;
     border-radius: 3px;
+}
+
+
+#fa{
+    width: 10px;
+    margin-right: 10px;
 }
 
 
