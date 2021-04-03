@@ -30,12 +30,14 @@ function carousel() {
       document.getElementById('ham-menu').style.display = 'flex';
       document.getElementById('hambugger').style.visibility = 'hidden';
       document.getElementById('logo-div').style.display = 'none';
+      document.getElementById('nav').style.display = 'none';
 })
 
   document.getElementById('close').addEventListener('click', () => {
       document.getElementById('ham-menu').style.display = 'none';
       document.getElementById('hambugger').style.visibility = 'visible';
       document.getElementById('logo-div').style.display = 'flex';
+      document.getElementById('nav').style.display = 'flex';
   })
 
 

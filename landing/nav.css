@@ -391,6 +391,16 @@ nav > ul > li > a:hover{
     background-color: transparent;
 }
 
+#hambugger:checked{
+    animation-name: hamMenu;
+    animation-duration: .4s;
+}
+
+@keyframes hamMenu{
+    0%{ transform: translateY(100); }
+    100%{ transform: translateY(0); }
+}
+
 .ham{
     background-color: var(--blue);
     width: 38px;
