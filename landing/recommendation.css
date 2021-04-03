@@ -109,7 +109,7 @@
 }
 
 
-/* @media only screen and (max-width: 490px){
+@media only screen and (max-width: 490px){
     #reco-sec{
         width: 100%;
         display: flex;
@@ -208,4 +208,4 @@
         background-image: url('../assets/ui.png');
         background-position: center;
     }
-} 
+}  

@@ -26,6 +26,14 @@ function carousel() {
 
 
 
+  document.getElementById('hambugger').addEventListener('click', () => {
+      document.getElementById('ham-menu').style.display = 'flex';
+})
+
+  document.getElementById('close').addEventListener('click', () => {
+      document.getElementById('ham-menu').style.display = 'none';
+  })
+
 
 
 
