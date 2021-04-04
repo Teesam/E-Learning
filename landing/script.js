@@ -27,16 +27,21 @@ function carousel() {
 
 
   document.getElementById('hambugger').addEventListener('click', () => {
-      document.getElementById('ham-menu').style.display = 'flex';
+      // document.getElementById('ham-menu').style.display = 'flex';
+      document.getElementById('ham-menu').style.transform = 'translateY(0)';
       document.getElementById('hambugger').style.visibility = 'hidden';
       document.getElementById('logo-div').style.display = 'none';
       document.getElementById('nav').style.display = 'none';
 })
 
   document.getElementById('close').addEventListener('click', () => {
-      document.getElementById('ham-menu').style.display = 'none';
+      // document.getElementById('ham-menu').style.display = 'none';
+      document.getElementById('ham-menu').style.transform = 'translateY(-100%)';
       document.getElementById('hambugger').style.visibility = 'visible';
+      document.getElementById('hambugger').style.transition = '1s';
+      document.getElementById('logo-div').style.transition = '1s';
       document.getElementById('logo-div').style.display = 'flex';
+      
       document.getElementById('nav').style.display = 'flex';
   })
 

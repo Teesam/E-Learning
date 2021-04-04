@@ -387,33 +387,44 @@ nav > ul > li > a:hover{
     align-items: flex-end;
     justify-content: center;
     width: 40px;
-    height: 40px;
+    height: 10px;
     background-color: transparent;
+    position: relative;
 }
 
-#hambugger:checked{
-    animation-name: hamMenu;
-    animation-duration: .4s;
-}
+    .ham{
+        background-color: var(--blue);
+        width: 38px;
+        height: 3px;
+        margin: .1rem;
+        border-radius: 3px;
+        z-index: 99;
+    }
 
-@keyframes hamMenu{
-    0%{ transform: translateY(100); }
-    100%{ transform: translateY(0); }
-}
+    #ham-2{
+        width: 30px;
+    }
 
-.ham{
-    background-color: var(--blue);
-    width: 38px;
-    height: 5px;
-    margin: .3rem;
-    border-radius: 3px;
+    #ham-3{
+        width: 20px;
+    }
+
+    #toggler{
+        position: absolute;
+        top: o;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
     }
 
     #ham-menu{
         background-color: rgb(59, 46, 46, .9);
         width: 100vw;
         height: 100vh;
-        display: none;
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -423,6 +434,12 @@ nav > ul > li > a:hover{
         left: 0;
         bottom: 0;
         z-index: 99;
+        transform: translateY(-100%);
+        transition: all 1s;
+    }
+
+    #hambugger #toggler:checked ~ #ham-menu{
+        transform: translateY(0);
     }
 
     .ham-li{
@@ -445,6 +462,14 @@ nav > ul > li > a:hover{
         font-size: 20px;
         color: red;
         text-align: start;
+    }
+
+    #bugger{
+        z-index: 100;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
     }
 
     #ham-nav-input{
