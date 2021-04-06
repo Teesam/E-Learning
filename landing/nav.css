@@ -257,12 +257,12 @@ nav > ul > li > a:hover{
     
     #logo{
         width: 7rem;
-        margin-left: 3rem;
+        margin-left: unset;
     }
     
     #logo-div{
         height: 100%;
-        width: 50%;
+        width: 70%;
         display: flex;
         justify-content: space-between;
         align-items: center;
