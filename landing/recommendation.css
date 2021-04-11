@@ -109,6 +109,27 @@
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 490px){
     #reco-sec{
         width: 100%;
@@ -123,7 +144,7 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
-        margin-top: 5rem;
+        margin-top: unset;
     }
     
     #recommendations > h4{
@@ -138,7 +159,7 @@
     }
     
     .recommendation-course-card{
-        width: 90%;
+        width: 100%;
         display: flex;
         margin-left: unset;
         border: .7px solid rgb(196, 195, 195);
