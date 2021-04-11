@@ -318,7 +318,7 @@
     }
 
     #slider-text > h1{
-        font-size: 20px !important;
+        font-size: 25px !important;
         width: 80vw !important;
     }
     
@@ -358,7 +358,7 @@
     
     #slider-text{
         position: absolute;
-        top: 20%;
+        top: 10%;
         left: 0;
         color: white;
         font-size: .8rem;
