@@ -492,10 +492,10 @@
     
     .course-image{
         width: 100%;
-        height: 100%;
-        background-image: url('../assets/python.jpg');
+        height: unset;
         background-position: center;
         margin-right: unset;
+        margin-right: 1rem;
     }
     
     .course-buy{
@@ -574,10 +574,6 @@
     .course-card > div{
         width: 10rem;
         font-size: .8rem;
-    }
-
-    .course-card > div:not(:first-child){
-        margin-left: 1rem;
     }
     
     
