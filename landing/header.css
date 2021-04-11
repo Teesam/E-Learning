@@ -20,7 +20,7 @@
 }
 
 .slider-image:hover{
-    opacity: .8;
+    filter: brightness(.3);
 }
 
 #slider-holder{
@@ -50,6 +50,7 @@
     width: 100%;
     height: 100%;
     transition: 2s;
+    filter: brightness(.7);
 }
 
 #slider-text{
@@ -61,86 +62,11 @@
     padding: 1rem;
 }
 
-/* #slider-text > span{
-    height: 1rem;
-    width: 2rem;
-    position: absolute;
-    display: inline-block;
-}
-
-#slider-text > span:nth-child(1){
-    top: 0;
-    left: -200%;
-    width: 100%;
-    height: 4px;
-    background-image: linear-gradient(90deg, transparent, rgb(218, 7, 7));
-    transition: .25s;
-}
-
-#slider-text:hover > span:nth-child(1){
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background-image: linear-gradient(90deg, transparent, rgb(218, 7, 7));
-
-}
-
-#slider-text > span:nth-child(2){
-    top: -200%;
-    right: 0;
-    width: 4px;
-    height: 100%;
-    background-image: linear-gradient(90deg, transparent, rgb(218, 7, 7));
-    transition: .5s;
-}
-
-#slider-text:hover > span:nth-child(2){
-    top: 0;
-    right: 0;
-    background-image: linear-gradient(180deg, transparent, rgb(218, 7, 7));
-
-}
-
-#slider-text > span:nth-child(3){
-    bottom: 0;
-    right: -200%;
-    width: 100%;
-    height: 4px;
-    background-image: linear-gradient(90deg, transparent, rgb(218, 7, 7));
-    transition: .25s;
-}
-
-#slider-text:hover > span:nth-child(3){
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 4px;
-    background-image: linear-gradient(270deg, transparent, rgb(218, 7, 7));
-
-}
-
-#slider-text > span:nth-child(4){
-    bottom: -200%;
-    left: 0;
-    width: 4px;
-    height: 100%;
-    background-image: linear-gradient(90deg, transparent, rgb(218, 7, 7));
-    transition: .5s;
-}
-
-#slider-text:hover > span:nth-child(4){
-    bottom: 0;
-    left: 0;
-    background-image: linear-gradient(360deg, transparent, rgb(218, 7, 7));
-
-} */
-
 #slider-text-p{
     font-weight: bolder;
     color: rgb(90, 34, 39);
     animation-name: sliderP;
-    animation-duration: 5s;
+    animation-duration: 8s;
     animation-iteration-count: infinite;
 } 
 
@@ -149,7 +75,6 @@
     20%{transform: translateY(0px);}
     100%{transform: translateY(0px);}
 }
-
 
 #radio-div{
     visibility: hidden;
@@ -387,6 +312,13 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-top: 20rem;
+        height: auto;
+    }
+
+    #slider-text > h1{
+        font-size: 20px !important;
+        width: 80vw !important;
     }
     
     .slider{
@@ -416,32 +348,34 @@
         display: flex;
         background-color: white;
         width: 100vw;
-        height: 60vh;
+        height: 50vh;
         overflow-x: hidden;
         border-radius: 5px;
         margin: 0 0 1rem 0;
+        position: relative;
     }
     
     #slider-text{
         position: absolute;
-        top: 2rem;
-        left: 1rem;
+        top: 20%;
+        left: 0;
         color: white;
+        font-size: .8rem;
+        width: 80%;
     }
     
     #slider-text-p{
         font-weight: bolder;
-        color: rgb(190, 164, 12);
+        color: rgb(173, 64, 64);
         animation-name: sliderP;
-        animation-duration: 20s;
+        animation-duration: 8s;
         animation-iteration-count: infinite;
-    }
+    } 
     
     @keyframes sliderP{
-        0%{color: rgb(78, 51, 53);}
-        25%{color: rgb(197, 182, 43);}
-        50%{color: rgb(230, 98, 66);}
-        75%{color: rgb(247, 241, 245);}
+        0%{transform: translateY(50px);}
+        20%{transform: translateY(0px);}
+        100%{transform: translateY(0px);}
     }
     
     #radio-div{
@@ -483,7 +417,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        font-size: .6rem;
+        font-size: .5rem;
     }
     
     #slider-tag > p:not(:last-child){
@@ -492,11 +426,13 @@
     
     #slider-tag > p:not(:first-child){
         margin-right: .5rem;
+        text-align: flex-end;
     }
     
     #header-course-holder{
         width: 100%;
         max-height: unset;
+        height: auto;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -505,7 +441,7 @@
     
     .header-course-card{
         width: 90%;
-        height: 15rem;
+        height: 20rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -550,8 +486,8 @@
     }
     
     .course-image{
-        width: 10rem;
-        height: auto;
+        width: 100%;
+        height: 40%;
         background-image: url('../assets/python.jpg');
         background-position: center;
         margin-right: 1rem;
@@ -568,8 +504,8 @@
     }
     
     #python{
-        width: 10rem;
-        height: 13rem;
+        width: 100%;
+        height: 90%;
         background-image: url('../assets/python.jpg');
         background-position: center;
         background-size: cover;
@@ -577,7 +513,7 @@
     }
     
     #java{
-        width: 10rem;
+        width: 100%;
         height: 13rem;
         background-image: url('../assets/java.jpg');
         background-position: center;

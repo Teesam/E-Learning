@@ -1,4 +1,3 @@
-
 let slideIndex = 0;
 carousel();
 
@@ -11,7 +10,7 @@ function carousel() {
   slideIndex++;
   if (slideIndex > x.length) {slideIndex = 1}
   x[slideIndex-1].style.display = "block";
-  setTimeout(carousel, 5000);
+  setTimeout(carousel, 8000);
 }
 
 
@@ -27,7 +26,6 @@ function carousel() {
 
 
   document.getElementById('hambugger').addEventListener('click', () => {
-      // document.getElementById('ham-menu').style.display = 'flex';
       document.getElementById('ham-menu').style.transform = 'translateY(0)';
       document.getElementById('hambugger').style.visibility = 'hidden';
       document.getElementById('logo-div').style.display = 'none';
@@ -35,7 +33,6 @@ function carousel() {
 })
 
   document.getElementById('close').addEventListener('click', () => {
-      // document.getElementById('ham-menu').style.display = 'none';
       document.getElementById('ham-menu').style.transform = 'translateY(-100%)';
       document.getElementById('hambugger').style.visibility = 'visible';
       document.getElementById('hambugger').style.transition = '1s';
