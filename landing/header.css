@@ -159,8 +159,8 @@
 }
 
 .header-course-card:hover{
-    background-color: rgb(139, 98, 98);
-    color: white;
+    background-color: rgb(240, 243, 245);
+    color: black;
 }
 
 .header-course-card > div{
