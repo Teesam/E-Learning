@@ -9,7 +9,7 @@
 
 :root{
     --grey: rgb(237, 240, 248);
-    --blue: rgb(86, 95, 211);
+    --blue: #0d47a1;
 }
 
     body{
@@ -48,7 +48,7 @@
     #logo{
         width: 7rem;
         margin-left: 3rem;
-        color: #0d47a1;
+        color: var(--blue);
         font-style: italic;
     }
     
