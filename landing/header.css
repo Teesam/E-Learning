@@ -791,11 +791,11 @@
     }
     
     .course-buy{
-        background-image: linear-gradient(180deg, rgb(62, 62, 146), black);
+        background-color: var(--blue);
         border: none;
         padding: .3rem;
         border-radius: 5px;
-        color: var(--blue);
+        color: white;
         font-size: .7rem;
         cursor: pointer;
     }
