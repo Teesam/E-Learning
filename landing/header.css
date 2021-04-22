@@ -68,6 +68,7 @@
     animation-name: sliderP;
     animation-duration: 8s;
     animation-iteration-count: infinite;
+    font-size: 2rem;
 } 
 
 @keyframes sliderP{
@@ -155,7 +156,7 @@
 }
 
 .header-course-card:not(:first-child){
-    margin-top: 1rem;
+    margin-top: 5rem;
 }
 
 .header-course-card:hover{
@@ -287,6 +288,297 @@
 
 
 
+
+
+
+
+
+
+
+@media only screen and (max-width: 1370px){
+    #header-half{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+    }
+    
+    .slider{
+        min-width: 100%;
+        height: 100%;
+        cursor: pointer;
+        animation-name: slide;
+        animation-duration: 2s;
+    }
+    
+    @keyframes slide{
+        0%{opacity: .5;}
+        100%{opacity: 1;}
+    }
+    
+    .slider-image:hover{
+        filter: brightness(.3);
+    }
+    
+    #slider-holder{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 6rem;
+        width: 100vw;
+        height: auto;
+        overflow: hidden;
+    }
+    
+    #slider-div{
+        position: relative;
+    }
+    
+    #slider-div-div{
+        display: flex;
+        background-color: white;
+        width: 75vw;
+        height: 80vh;
+        overflow-x: hidden;
+        border-radius: 5px;
+    }
+    
+    .slider-image{
+        width: 100%;
+        height: 100%;
+        transition: 2s;
+        filter: brightness(.7);
+    }
+    
+    #slider-text{
+        position: relative;
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+        color: white;
+        padding: 1rem;
+    }
+
+    #slider-text > h1{
+        font-size: 30px !important;
+        width: 60vw !important;
+    }
+    
+    #slider-text-p{
+        font-weight: bolder;
+        color: rgb(90, 34, 39);
+        animation-name: sliderP;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+        font-size: unset;
+    } 
+    
+    @keyframes sliderP{
+        0%{transform: translateY(50px);}
+        20%{transform: translateY(0px);}
+        100%{transform: translateY(0px);}
+    }
+    
+    #radio-div{
+        visibility: hidden;
+        position: absolute;
+        top: 1;
+        left: 1;
+    }
+    
+    .slider-radio:not(:last-child){
+        margin-right: 1rem;
+    }
+    
+    #radio-label{
+        position: absolute;
+        bottom: 3rem;
+        margin: 0 auto;
+        right: 40%;
+    }
+    
+    .radio{
+        padding: 5px;
+        border-radius: 10px;
+        border: 2px solid rgb(0, 195, 255);
+        cursor: pointer;
+        display: none;
+    }
+    
+    .radio:not(:last-child){
+        margin-right: 3rem;
+    }
+    
+    #slider-tag{
+        background-color: #0d47a1;
+        width: 100%;
+        border-radius: 5px;
+        color: white;
+        padding: 1rem 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: .6rem;
+        margin-top: 1rem;
+    }
+    
+    #slider-tag > p:not(:last-child){
+        margin-left: .5rem;
+    }
+    
+    #slider-tag > p:not(:first-child){
+        margin-right: .5rem;
+    }
+    
+    #header-course-holder{
+        width: 100%;
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1rem;
+    }
+    
+    .header-course-card{
+        min-width: 90%;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 2rem;
+        overflow-x: hidden;
+        border: .2px solid rgb(247, 241, 241);
+        border-radius: 10px;
+        margin-top: 1rem;
+        cursor: pointer;
+        transition: .4s;
+        padding: 0 0 .5rem 0;
+    }
+    
+    .header-course-card:not(:first-child){
+        margin-top: 1rem;
+    }
+    
+    .header-course-card:hover{
+        background-color: rgb(240, 243, 245);
+        color: black;
+    }
+    
+    .header-course-card > div{
+        width: 90%;
+        font-size: .8rem;
+    }
+    
+    .header-course-card > div > div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: .5rem;
+    }
+    
+    .header-course-card > div > h5{
+        margin: .5rem 0;
+        color: rgb(119, 43, 53);
+    }
+    
+    
+    .course-buy{
+        background-color: #0d47a1;
+        border: none;
+        padding: .3rem;
+        border-radius: 5px;
+        color: white;
+        font-size: .7rem;
+        cursor: pointer;
+    }
+    
+    #python{
+        width: 150%;
+        height: 150px;
+        background-image: url('../assets/python.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    #java{
+        width: 150%;
+        height: 100px;
+        background-image: url('../assets/java.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    #lower-header-course-holder{
+        display: flex;
+        width: 95vw;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        justify-content: space-evenly;
+        margin-top: 3rem;
+        box-shadow: 0px 1px 7px 0px rgb(243, 241, 241);
+        border-radius: 5px;
+        padding: 3rem 0;
+        margin-top: 5rem;
+    }
+    
+    .course-card{
+        width: 300px;
+        height: 250px;
+        display: flex;
+        margin-left: 1rem;
+        border: .7px solid rgb(196, 195, 195);
+        padding: .5rem;
+        border-radius: 10px;
+    }
+    
+    .course-image{
+        margin-right: 20px;
+    }
+    
+    .course-card > div{
+        width: 10rem;
+        font-size: .8rem;
+    }
+    
+    
+    .course-card > div > div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1rem;
+    }
+    
+    .course-card > div > h5{
+        margin: 1rem 0;
+        color: rgb(78, 78, 248);
+    }
+    
+    #it-security{
+        background-image: url('../assets/security.jpg');
+        background-position: center;
+    }
+    
+    #art{
+        background-image: url('../assets/art.jpg');
+        background-position: center;
+    }
+    
+    #web-dev{
+        background-image: url('../assets/web.jpg');
+        background-position: center;
+    }
+    
+    #accounting{
+        background-image: url('../assets/accounting-1.png');
+        background-position: center;
+    }
+
+}
 
 
 
