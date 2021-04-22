@@ -1,8 +1,11 @@
 #reco-sec{
-    width: 100%;
+    width: 95%;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0px 1px 7px 0px rgb(243, 241, 241);
+    padding: 1rem 0;
+    margin-top: 2rem;
 }
 
 #recommendations{
@@ -19,7 +22,7 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    margin-top: 5rem;
+    
 }
 
 
@@ -50,6 +53,10 @@
     border-radius: 10px;
 }
 
+.recommendation-course-card:not(:last-child){
+    margin-right: .2rem;
+}
+
 .recommendation-course-card > div{
     width: 10rem;
     font-size: .8rem;
@@ -65,7 +72,7 @@
 
 .recommendation-course-card > div > h5{
     margin: 1rem 0;
-    color: rgb(78, 78, 248);
+    color: #0d47a1;
 }
 
 #music{
